@@ -1,0 +1,490 @@
+:root {
+    /* Fresa */
+    --Color-Fresa: #FA5053;
+    --Rosa-Fuerte-Fresa: #ec3869;
+    --Rosa-Fresa: #dfaeb5;
+    --Rosa-Claro-Fresa: #f9e2e3;
+    --Amarillo-Fuerte-Fresa: #F4D58D;
+    --Amarillo-Claro-Fresa: #fffde3;
+    --Crema-Fresa: #fffbf4;
+    --Verde-Fuerte-Fresa: #8E9A5A;
+    --Verde-Claro-Fresa: #ecf6ca;
+
+    /* Arandano */
+    --Color-Arandano: #4F86F7;
+    --Morado-Fuerte-Arandano: #9D84C7;
+    --Morado-Claro-Arandano: #AC95D1;
+    --Azul-Fuerte-Arandano: #4c64a1;
+    --Azul-Arandano: #3b508b;
+    --Azul-Claro-Arandano: #d4e5ed;
+    --Verde-Fuerte-Arandano: #A8C3A0;
+    --Verde-Claro-Arandano: #BFD8B8;
+    --Crema-Arandano: #DDE5E8;
+
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* list-style: none; */
+}
+
+.pagina
+{
+    padding: 20px;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.fresa
+{
+    background-color: var(--Amarillo-Claro-Fresa);
+}
+
+h1
+{
+    font-family: 'Meldina', sans-serif;
+    font-size: 40px;
+}
+
+
+h2
+{
+    font-family: 'Meldina', sans-serif;
+    font-size: 40px;
+}
+
+h3
+{
+    font-family: 'Meldina', sans-serif;
+    font-size: 30px;
+}
+
+.h2-fresa
+{
+    color: var(--Rosa-Fuerte-Fresa);
+}
+
+.h3-fresa
+{
+    background-color: var(--Verde-Claro-Fresa);
+}
+
+h4
+{
+    font-family: 'Meldina', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container
+{
+    border-radius: 20px;
+    border: 2px solid #1a1a1aff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.fresa-content
+{
+    border: 3px solid var(--Rosa-Fresa);
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 800px; */
+    height: 150px;
+}
+
+.header-fresa
+{
+    background-image: url("imagnes/fondo\ fresa.jpg");
+}
+
+.imgfruta
+{
+    width: 13%;
+    height: 160px;
+    margin-top: -30px;
+}
+
+.imgnombre
+{
+    width: 50%;
+    height: 260px;
+    margin-top: -70px;
+}
+
+/* Main */
+
+main
+{
+    display: flex;
+    gap: 20px;
+}
+
+/* Menu */
+
+.menu-fresa
+{
+    background-color: var(--Rosa-Claro-Fresa);
+}
+
+.imgmenu-fresa
+{
+    background-image: url("imagnes/fondo\ fresa.jpg");
+}
+
+.section-1
+{
+    width: 25%;
+}
+
+.btn-1
+{
+    background-color: #676767;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 10px 25px 10px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-fresa
+{
+    background-color: var(--Amarillo-Claro-Fresa);
+}
+
+.btn-arandano
+{
+    background-color: var(--Azul-Claro-Arandano);
+    color: var(--Azul-Fuerte-Arandano);
+}
+
+
+.main
+{
+    display: flex;
+    gap: 20px;
+}
+
+.img-1
+{
+    display: flex;
+    justify-content: center;
+}
+
+.img-1 img
+{
+    height: 140px;
+    width: 200px;
+}
+
+.img-1-fresa
+{
+    background-color: var(--Verde-Claro-Fresa);
+}
+
+/* Section */
+
+.section-2
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    
+}
+
+.se-2-fresa
+{
+    background-color: var(--Crema-Fresa);
+}
+
+.resumen
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.curiosidades
+{
+    display: flex;
+    gap: 20px;
+}
+
+.curiosidades img
+{
+    width: 50%;
+}
+
+.curiosidades img, .curiosidades .list-curiosidade
+{
+    flex: 1
+}
+
+.list-curiosidades
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.h3
+{
+    margin-bottom: 20px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+}
+
+/* Carrusel */
+.carrusel
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor
+{
+    display: flex;
+    gap: 15px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.card
+{
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.card img
+{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.btn-2
+{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: var(--Verde-Claro-Fresa);
+    color: var(--Rosa-Fuerte-Fresa);
+}
+
+.prev
+{
+    left: 10px;
+}
+
+.next
+{
+    right: 10px;
+}
+
+/* Receta */
+
+.section-3
+{
+    width: 25%;
+}
+
+.mini-receta
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mini-r-fresa
+{
+    background-color: var(--Verde-Claro-Fresa);
+}
+
+.h3-3-fresa
+{
+    background-color: var(--Amarillo-Claro-Fresa);
+    color: var(--Verde-Fuerte-Fresa);
+}
+
+.receta
+{
+    margin-bottom: 10px;
+}
+
+.receta h4
+{
+    margin-bottom: 10px;
+}
+
+.receta li
+{
+    margin-bottom: 5px;
+}
+
+/* Comentario */
+
+.comentario
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario-fresa
+{
+    background-color: var(--Rosa-Claro-Fresa);
+}
+
+.form
+{
+    justify-items: center;
+}
+
+.form input, .form textarea
+{
+    border: none;
+    background-color: transparent;
+}
+
+.form textarea
+{
+    resize: none;
+    height: 100px;
+}
+
+.icon-mensaje
+{
+    vertical-align: top;
+}
+
+.input
+{
+    border-radius: 20px;
+    padding: 8px;
+    background-color: #a1a1a1;
+    margin: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.input-Fresa
+{
+    background-color: var(--Amarillo-Claro-Fresa);
+}
+
+input, textarea
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.btn-e-fresa
+{
+    background-color: var(--Rosa-Fuerte-Fresa);
+    color: var(--Crema-Fresa);
+}
+
+/* Footer */
+
+.footer-fresa
+{
+    background-image: url("imagnes/fondo\ fresa.jpg");
+}
+
+.btn-comentario
+{
+    width: 50%;
+    margin: 0 auto 20px;
+}
+
+/* Biografia */
+
+.section-4
+{
+    width: 30%;
+}
+
+.section-5
+{
+    width: 70%;
+}
+
+.comentarios
+{
+    background-color:var(--Rosa-Claro-Fresa);
+    border-radius: 20px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto 20px;
+}
+
+.perfil h1
+{
+    margin-bottom: 18px;
+    color: var(--Rosa-Fuerte-Fresa);
+}
+
+.datos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.datos img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.dato
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.dato ion-icon
+{
+    color: var(--Rosa-Fuerte-Fresa);
+    font-size: 40px;
+}
+
+.cont-datos
+{
+    margin-bottom: 30px;
+}

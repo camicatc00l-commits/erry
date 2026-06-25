@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/meldina" rel="stylesheet">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <div class="fresa pagina">
+        <header class="header header-fresa container fresa-content">
+            <img class="imgfruta" src="imagnes/fresa.png" alt="">
+            <img class="imgnombre" src="imagnes/StrawberryTitulo.png" alt="">
+        </header>
+        <main>
+            <div class="section-1">
+                <div class="menu menu-fresa container fresa-content">
+                    <div class="imgmenu imgmenu-fresa container fresa-content">
+                        <img src="imagnes/StrawberryLogo.png" alt="">
+                    </div>
+                    <nav class="nav">
+                        <a class="btn-1 btn-fresa" href="index.html"><h3 class="h2-fresa">Strawberry</h3></a>
+                        <a class="btn-1 btn-arandano" href=""><h3>Blueberry</h3></a>
+                        <a class="btn-1 btn-frambuesa" href=""><h3>Raspberry</h3></a>
+                        <a class="btn-1 btn-mora" href=""><h3>Blackberry</h3></a>
+                        <a class="btn-1 btn-fresa" href="Biografía.html"><h3>Biografía</h3></a>
+                    </nav>
+                </div>
+                <div class="img-1 img-1-fresa container fresa-content">
+                    <img src="imagnes/fresa.png" alt="">
+                </div>
+            </div>
+            <div class="section-2 se-2-fresa container fresa-content">
+                <div class="resumen">
+                    <h2 class="h2-fresa">Strawberry</h2>
+                    <p>Una fresa es una fruta pequeña, roja y dulce, con puntitos por fuera, muy rica y jugosa 🍓✨</p>
+                </div>
+                <div class="curiosidades">
+                    <img src="imagnes/fresa.png" alt="">
+                    <ol class="list-curiosidades">
+                        <h3 class="h3 h2-fresa h3-fresa">Curiosidades</h3>
+                        <li>La fresa es la única fruta que tiene sus “semillitas” por fuera 💖</li>
+                        <li>En realidad, cada puntito es una semilla independiente 😯🌱</li>
+                        <li>La fresa no es técnicamente una fruta “verdadera”, sino un fruto agregado 😮</li>
+                        <li>Hay fresas de otros colores, como blancas o amarillas 🤍💛</li>
+                        <li>Son ricas en vitamina C, ¡más que algunas naranjas! 🍊💪</li>
+                    </ol>
+                </div>
+                <div class="carrusel">
+                    <button class="btn-2 prev">❮</button>
+                    <div class="contenedor">
+                        <div class="card"><img src="imagnes/fresa.png"></div>
+                        <div class="card"><img src="imagnes/fresa.png"></div>
+                        <div class="card"><img src="imagnes/fresa.png"></div>
+                        <div class="card"><img src="imagnes/fresa.png"></div>
+                        <div class="card"><img src="imagnes/fresa.png"></div>
+                        <div class="card"><img src="imagnes/fresa.png"></div>
+                        <div class="card"><img src="imagnes/fresa.png"></div>
+                        <div class="card"><img src="imagnes/fresa.png"></div>
+                        <div class="card"><img src="imagnes/fresa.png"></div>
+                    </div>
+                    <button class="btn-2 next">❯</button>
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="mini-receta mini-r-fresa container fresa-content">
+                    <h3 class="h3 h3-3-fresa h2-fresa">Mini Receta</h3>
+                    <div class="receta">
+                        <h4>Ingredientes</h4>
+                        <ul>
+                            <li>Fresas</li>
+                            <li>Crema</li>
+                            <li>Azúcar</li>
+                        </ul>
+                        <h4>Instrucciones</h4>
+                        <ol>
+                            <li>Lava y corta las fresas en pedacitos</li>
+                            <li>Agrégales un poco de crema</li>
+                            <li>Si quieres, añade azúcar</li>
+                            <li>Mezcla todo y listo 😋</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="comentario comentario-fresa container fresa-content">
+                    <form action="" class="form">
+                        <h3 class="h2-fresa">Comentario</h3>
+                        <div class="input input-Fresa">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" placeholder="Nombre" class="nombre" name="name">
+                        </div>
+                        <div class="input input-Fresa">
+                            <ion-icon name="at-outline"></ion-icon>
+                            <input type="email" placeholder="Correo" class="correo" name="email">
+                        </div>
+                        <div class="input input-Fresa">
+                            <ion-icon name="chatbubble-outline" class="icon-mensaje"></ion-icon>
+                            <textarea  placeholder="Mensaje"  required class="mensaje" name="message"></textarea>
+                        </div>
+                        <button type="button" class="btn-1 btn-e-fresa enviar" onclick="Comentario()"><h3>Enviar</h3></button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer footer-fresa container fresa-content ">
+            <a href="javascript:void(0)" class="btn-1 btn-comentario btn-e-fresa" id="btnComentarios" onclick="AlternarComentarios()"><h3>Cargar Comentarios</h3></a>
+            <div id="comentarios"></div>
+            <h4>Follow Us</h4>
+            <p>Facebook | Instagram | X</p>
+            <p>© 2026 Fruit World. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</body>
+</html>
